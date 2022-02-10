@@ -35,6 +35,9 @@ p {
   font-weight: 550;
   letter-spacing: 0.05rem;
 }
+h3 {
+  font-size: 1.5rem;
+}
 .section-title {
   font-size: 4rem;
   font-weight: 300;
@@ -387,7 +390,6 @@ p {
 }
 #projects .project-img {
   flex-basis: 50%;
-  height: 300px;
   overflow: hidden;
   position: relative;
 }
@@ -429,9 +431,9 @@ p {
 #about .about {
   flex-direction: column-reverse;
   text-align: center;
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 100px 20px;
+  padding: 0 20px;
 }
 #about .col-left {
   width: 350px;
@@ -448,6 +450,7 @@ p {
 }
 #about .col-right p {
   margin-bottom: 30px;
+  font-size: 1.8rem;
 }
 #about .col-right .cta {
   color: black;
@@ -463,10 +466,12 @@ p {
 /* End About Section */
 
 /* contact Section */
+
 #contact .contact {
   flex-direction: column;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
+  padding: 0;
 }
 #contact .contact-items {
   width: 300px;
@@ -637,7 +642,7 @@ p {
 
   /* About */
   #about .container {
-    height: auto;
+    min-height: 80vh;
   }
   #about .about {
     flex-direction: row;
@@ -658,9 +663,11 @@ p {
   /* End About */
 
   /* contact  */
+  #contact .container {
+    min-height: 50vh;
+  }
   #contact .contact {
     flex-direction: column;
-    padding: 100px 0;
     align-items: center;
     justify-content: center;
     min-width: 20vh;
